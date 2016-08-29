@@ -1,0 +1,16 @@
+#!/bin/bash
+
+i=0
+while [[ true ]]; do
+  #statements
+  state=`cat /proc/acpi/button/lid/LID0/state | awk {'print $2'}`
+  echo $state
+  if [[ $state == "closed" ]]
+  then
+    echo 'suspend here'
+    sudo systemctl suspend
+  fi
+  echo $i
+  ((i++))
+  sleep 1
+done
