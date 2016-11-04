@@ -1,0 +1,106 @@
+Host cpu20
+	Hostname cpu20
+	user root
+Host 01.b1
+	HostName cpu01.bracknell1.vscalers.com
+	User root
+Host cs.WHMCS
+	HostName 185.69.164.68
+	User root
+	Port 2222
+Host cs.AD_AYDO_COM_Zentyal
+        HostName 185.69.164.68
+        User root
+        Port 7771
+Host cs.PYDIO_GIG
+        HostName 185.69.164.68
+        User root
+        Port 7773
+Host cs.SparkGateway
+        HostName 185.69.164.68
+        User root
+        Port 7774
+Host cs.Postgres_GIG
+        HostName 185.69.164.68
+        User root
+        Port 7772
+Host ovh1
+	HostName 94.23.33.39
+	User root
+	IdentityFile /home/galal/id_rsa
+	Port 22
+Host ovh2
+        HostName 94.23.34.136
+        User root
+        IdentityFile /home/galal/id_rsa
+        Port 22
+Host ovh3
+        HostName 94.23.35.227
+        User root
+        IdentityFile /home/galal/id_rsa
+        Port 22
+Host ovh4
+        HostName 94.23.38.89
+        User root
+        IdentityFile /home/galal/id_rsa
+        Port 22
+Host ovh5
+        HostName 94.23.35.208
+        User root
+        IdentityFile /home/galal/id_rsa
+        Port 22
+Host ovh6
+        HostName 37.59.7.72
+        User root
+        IdentityFile /home/galal/id_rsa
+        Port 22
+Host ovh7
+        HostName 37.187.30.26
+        User root
+        IdentityFile /home/galal/id_rsa
+        User root
+Host du-conv-2-git
+  Hostname du-conv-2.demo.greenitglobe.com
+  User root
+  IdentityFile /opt/code/git/openvcloudEnvironments/du-conv-2/keys/git_root
+Host odoo.racktivity.com
+  Hostname 185.69.164.121
+  User root
+  Port 1456
+Host odoo.proxy
+  Hostname 185.69.164.123
+  User root
+  Port 1122
+Host dns.aydo
+  Hostname 185.69.164.128
+  User root
+  Port 222
+Host staging
+  Hostname 185.69.164.69
+  User root
+  Port 2233
+Host proxy.staging
+  Hostname 185.69.164.69
+  User root
+  Port 2234
+Host production1
+  Hostname 173.240.12.222
+  User root
+  Port 22
+Host production2
+  HostName 185.69.164.60
+  User root
+  Port 22
+Host production2.proxy
+  Hostname 185.69.164.60
+  User root
+  Port 41262
+Hostname production1.proxy
+  Hostname 173.240.12.222
+  User root
+  Port 41262
+Host jumpscale
+  Hostname 173.240.9.11
+  User root
+  Port 6644
+  ForwardAgent yes
