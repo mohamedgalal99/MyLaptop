@@ -104,3 +104,19 @@ Host jumpscale
   User root
   Port 6644
   ForwardAgent yes
+Host jenkins
+  Hostname 173.240.9.179
+  User root
+  Port 4022
+Host jenkins-desktop
+  Hostname 173.240.9.179
+  User root
+  Port 4024
+Host jenkins-cockpit
+  Hostname 85.255.197.124
+  User root
+  Port 2200
+Host jenkins-JS-docker-scale3
+  Hostname 85.255.197.122
+  User root
+  Port 6022
