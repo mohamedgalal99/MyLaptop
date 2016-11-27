@@ -120,3 +120,23 @@ Host jenkins-JS-docker-scale3
   Hostname 85.255.197.122
   User root
   Port 6022
+Host du-conv-2-ctrl
+  Hostname 192.168.27.254
+  User gig
+  port 22
+Host be-g8-1-ctrl
+  HostName 10.101.106.254
+  Port 22
+  User gig
+Host be-g8-4-ctrl
+  Hostname 10.101.109.254
+  User gig
+  Port 22
+Host du-conv-3-ctrl
+  Hostname 192.168.27.0
+  Port 22
+  User gig
+Host uk-g8-1-ctrl
+  Hostname 85.255.197.78
+  Port 34022
+  User gig
