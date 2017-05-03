@@ -24,45 +24,16 @@ Host cs.Postgres_GIG
         HostName 185.69.164.68
         User root
         Port 7772
-Host ovh1
-	HostName 94.23.33.39
-	User root
-	IdentityFile /home/galal/id_rsa
-	Port 22
 Host ovh2
         HostName 94.23.34.136
         User root
         IdentityFile /home/galal/id_rsa
         Port 22
-Host ovh3
-        HostName 94.23.35.227
-        User root
-        IdentityFile /home/galal/id_rsa
-        Port 22
-Host ovh4
-        HostName 94.23.38.89
-        User root
-        IdentityFile /home/galal/id_rsa
-        Port 22
-Host ovh5
-        HostName 94.23.35.208
-        User root
-        IdentityFile /home/galal/id_rsa
-        Port 22
-Host ovh6
-        HostName 37.59.7.72
-        User root
-        IdentityFile /home/galal/id_rsa
-        Port 22
-Host ovh7
-        HostName 37.187.30.26
-        User root
-        IdentityFile /home/galal/id_rsa
-        User root
 Host du-conv-2-git
   Hostname du-conv-2.demo.greenitglobe.com
   User root
   IdentityFile /opt/code/git/openvcloudEnvironments/du-conv-2/keys/git_root
+#### Odoo ##################
 Host odoo.racktivity.com
   Hostname 185.69.164.121
   User root
@@ -71,10 +42,17 @@ Host odoo.proxy
   Hostname 185.69.164.123
   User root
   Port 1122
+Host odoo.proxy-be-gen-1
+  Hostname 212.23.52.79
+  User root
+  Port 1119
+############################
 Host dns.aydo
   Hostname 185.69.164.128
   User root
   Port 222
+
+##### Web Sites ########
 Host staging
   Hostname 185.69.164.69
   User root
@@ -83,10 +61,10 @@ Host proxy.staging
   Hostname 185.69.164.69
   User root
   Port 2234
-Host production1
-  Hostname 173.240.12.222
-  User root
-  Port 22
+#Host production1
+#  Hostname 173.240.12.222
+#  User root
+#  Port 22
 Host production2
   HostName 185.69.164.60
   User root
@@ -95,48 +73,164 @@ Host production2.proxy
   Hostname 185.69.164.60
   User root
   Port 41262
-Hostname production1.proxy
-  Hostname 173.240.12.222
+Host staging-be-gen-1
+  HostName 212.23.52.80
+  Port 2022
   User root
-  Port 41262
+#Host production1.proxy
+#  Hostname 173.240.12.222
+#  User root
+#  Port 9234
+Host redseacat-be-scale-1
+  HostName 85.255.197.114
+  port 2024
+  User root
+Host production-be-scale-1.proxy
+  HostName 85.255.197.114
+  port 2025
+  User root
+Host production-be-scale-1
+  HostName 85.255.197.114
+  Port 2023
+  User root
+#######################
 Host jumpscale
   Hostname 173.240.9.11
   User root
   Port 6644
   ForwardAgent yes
+
+####### Jenkins #########
 Host jenkins
-  Hostname 173.240.9.179
+  Hostname 10.101.101.137
   User root
-  Port 4022
-Host jenkins-desktop
-  Hostname 173.240.9.179
+  Port 2022
+#Host jenkins-desktop
+#  Hostname 173.240.9.179
+#  User root
+#  Port 4024
+#Host jenkins-cockpit
+#  Hostname 85.255.197.124
+#  User root
+#  Port 2200
+#  ForwardAgent yes
+#Host jenkins-JS-docker-scale3
+#  Hostname 85.255.197.122
+#  User root
+#  Port 6022
+#  ForwardAgent yes
+Host jenkins-du-conv-2
+  HostName 192.168.28.66
   User root
-  Port 4024
-Host jenkins-cockpit
-  Hostname 85.255.197.124
+  Port 2022
+  ForwardAgent yes
+Host jenkins-be-scale-3
+  Hostname 85.255.197.120
   User root
-  Port 2200
-Host jenkins-JS-docker-scale3
-  Hostname 85.255.197.122
-  User root
-  Port 6022
+  Port 2023
+  ForwardAgent yes
+
+####### Controllers #######
 Host du-conv-2-ctrl
   Hostname 192.168.27.254
   User gig
   port 22
+  ForwardAgent yes
+
 Host be-g8-1-ctrl
   HostName 10.101.106.254
   Port 22
   User gig
+  ForwardAgent yes
+
 Host be-g8-4-ctrl
   Hostname 10.101.109.254
   User gig
   Port 22
+  ForwardAgent yes
+Host du-conv-2-ctrl
+  Hostname 192.168.27.254
+  Port 22
+  ForwardAgent yes
 Host du-conv-3-ctrl
   Hostname 192.168.27.0
   Port 22
   User gig
+  ForwardAgent yes
 Host uk-g8-1-ctrl
   Hostname 85.255.197.78
   Port 34022
   User gig
+  ForwardAgent yes
+Host be-scale-1-ctrl
+  HostName 10.101.101.254
+  Port 22
+  User gig
+  ForwardAgent yes
+Host be-scale-3-ctrl
+  HostName 10.101.102.254
+  Port 22
+  User gig
+  ForwardAgent yes
+Host centrilogic-ctrl
+  HostName 172.98.207.222
+  Port 34022
+  User gig
+  ForwardAgent yes
+
+Host be-conv-2-ctrl
+  HostName 10.101.104.254
+  Port 22
+  User gig
+  ForwardAgent yes
+
+Host be-g8-3-ctrl
+  HostName 10.101.107.254
+  Port 22
+  User gig
+  ForwardAgent yes
+
+Host be-gen-1-ctrl
+  HostName 194.158.23.68
+  User gig
+  Port 34022
+  ForwardAgent yes
+
+Host ma-g8-1-ctr
+  HostName 197.227.35.158
+  User gig
+  Port 34022
+  ForwardAgent yes
+
+Host libvirt5
+  HostName 10.101.172.5
+  Port 22
+  User root
+
+######### Wireless work ########
+Host wireless-galal
+  HostName 192.168.20.19
+  user root
+  port 22
+Host wireless-jo
+  Hostname 192.168.20.20
+  Port 22
+  User root
+# be-gen-1
+Host bettercoin-hexo
+	HostName 212.23.52.78
+	Port 2022
+	User root
+# be-gen-1
+Host gig.tech-web
+	HostName 212.23.52.72
+	Port 3333
+	User root
+Host du-conv-1-ctrl
+	HostName 192.168.26.254
+	User gig
+	Port 22
+Host jenkins-be-g8-4
+	HostName 10.101.110.241
+	User root
+	Port 2022
