@@ -192,3 +192,10 @@ Host ru-msk-dc1-ctrl2
         User gig
         Port 34022
 	ForwardAgent yes
+
+## Sweeden ####################
+Host se-gen-1-
+        HostName 195.143.34.2
+        User gig
+        Port 34022
+        ForwardAgent yes
